@@ -1,16 +1,23 @@
 <div class="navbar transition-background-color" >
-  <div class="">
+  <div [ngStyle]="{whiteSpace: 'nowrap'}">
     <a href="#home" [ngStyle]="{fontSize: '20px'}">SmartOne 365 </a>
-    <span [ngStyle]="{textDecoration: 'line-through', fontWeight: '300'}">€ 600,00</span><span [ngStyle]="{fontWeight: '300'}"> € 499,00  iva inclusa</span>
+    <span class="ml-1" [ngStyle]="{textDecoration: 'line-through'}">
+      € 600,00
+    </span>
+    <span> € 499,00  iva inclusa</span>
   </div>
-  <div>
-    <a href="#news">News</a>
+  <div class="hancors col-6">
+    <a href="#Panoramica">Panoramica</a>
+    <a href="#App">App</a>
+    <a href="#Spec">Specifiche e installazione</a>
+    <a href="#Download">Download</a>
+    <button class="add-to-cart">Aggiungi al carrello</button>
   </div>
 </div>
 <div>
   <img src="assets/Livello 16.png" [ngStyle]="{width: '100%'}">
 </div>
-<div [ngStyle]="{padding: '0 10%'}">
+<div [ngStyle]="{padding: '0 5%'}">
   <div class="col-6" [ngStyle]="{marginTop: '-350px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center'}">
     <img src="assets/Product Image.png" [ngStyle]="{width: '95%'}">
     <div [ngStyle]="{fontSize: '12px', textTransform: 'uppercase'}">
@@ -28,7 +35,7 @@
     </p>
   </div>
 </div>
-<div [ngStyle]="{backgroundImage: 'url(\'assets/Livello 18.png\')', padding: '0 10%', height: '1277px'}"
+<div [ngStyle]="{backgroundImage: 'url(\'assets/Livello 18.png\')', padding: '0 5%', height: '1277px'}"
       class="container"
 >
   <div [ngStyle]="{gridColumn: 'col-start 2 / span 3', margin: 'auto'}">
@@ -46,7 +53,7 @@
     <img src="assets/Product image lat.png" [ngStyle]="{width: '95%'}">
   </div>
 </div>
-<div [ngStyle]="{backgroundImage: 'url(\'assets/Rettangolo 6 copia.png\')', padding: '0 10%', height: '1020px'}"
+<div [ngStyle]="{backgroundImage: 'url(\'assets/Rettangolo 6 copia.png\')', padding: '0 5%', height: '1020px'}"
      class="container"
 >
   <div [ngStyle]="{gridColumn: 'col-start 9 / span 4', margin: 'auto'}">
