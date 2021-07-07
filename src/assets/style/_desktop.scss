@@ -57,7 +57,7 @@
     position: fixed;
     width: calc(100% - 10%);
     top: 0;
-    z-index: 9999;
+    z-index: 99;
     padding: 0 5%;
     height: 150px;
     display: flex;
@@ -79,4 +79,17 @@
     background-color: white;
     box-shadow: 0 5px 10px rgba(57, 63, 72, 0.2);
   }
+
+  .sidebar {
+    border-left: 1px solid lightgrey;
+    height: 100%;
+    width: 33%;
+    background-color: white;
+    position: fixed !important;
+    padding: 40px;
+    z-index: 999;
+    overflow: auto;
+    right:0
+  }
+
 }

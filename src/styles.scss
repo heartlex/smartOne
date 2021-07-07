@@ -15,13 +15,17 @@ a {
   text-decoration:none;
 }
 
-span {
-  font-weight: 300;
-}
-
 body {
   font-family: 'Roboto';
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+span {
+  font-weight: 300;
 }
 
 .add-to-cart {
@@ -35,10 +39,46 @@ body {
   text-transform: uppercase;
 }
 
+.add-to-cart:hover {
+  background-color: crimson;
+  cursor: pointer;
+}
+
 .container {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-56 {
+  font-size: 56px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sidebar-interaction {
+  color: red;
+  text-decoration: underline;
 }

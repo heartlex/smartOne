@@ -1,4 +1,4 @@
-<div class="navbar transition-background-color" >
+<div class="navbar transition-background-color">
   <div [ngStyle]="{whiteSpace: 'nowrap'}">
     <a href="#home" [ngStyle]="{fontSize: '20px'}">SmartOne 365 </a>
     <span class="ml-1" [ngStyle]="{textDecoration: 'line-through'}">
@@ -12,6 +12,22 @@
     <a href="#Spec">Specifiche e installazione</a>
     <a href="#Download">Download</a>
     <button class="add-to-cart">Aggiungi al carrello</button>
+  </div>
+</div>
+<div class="sidebar flex-column-center transition-transform"
+     [ngStyle]="{transform: (isSidebarOpen ? 'translate(0%)' : 'translate(100%)')}">
+  <img [ngStyle]="{width: '24px'}" src="assets/close.png" (click)="closeSidebar()">
+  <div class="flex-column-center">
+    <div class="fs-56 uppercase" [ngStyle]="{marginTop: '190px', marginBottom: '24px'}">
+      Algoritmo PID
+    </div>
+    <p class="fs-20" [ngStyle]="{textAlign: 'center'}">
+      Il sistema di regolazione SmartOne 365 si avvale del Proportional Integral Derivative Strategy (PID), algoritmo che permette di gestire l’impianto radiante con la massima efficienza, modulando la potenza termica immessa in ogni ambiente.
+    </p>
+    <p class="fs-20" [ngStyle]="{textAlign: 'center'}">
+      Grazie alla configurazione guidata error free, funzionante anche senza connessione internet e disponibile su display e app, l’intero processo di installazione è facile e veloce.
+    </p>
+    <img [ngStyle]="{width: '100%', marginBottom: '100px'}" src="assets/grafico.png">
   </div>
 </div>
 <div>
@@ -29,24 +45,29 @@
     <div [ngStyle]="{fontSize: '24px' }">
       Avvolgi la tua casa nel comfort, avvolgi la tua famiglia nel benessere
     </div>
-    <p [ngStyle]="{fontSize: '16' }">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+    <p id="Panoramica" class="fs-16">
+      Lorem ipsum dolor <a class="sidebar-interaction" (click)="openSidebar()">sit amet</a>, consectetuer adipiscing
+      elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit, sed
       diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     </p>
   </div>
 </div>
-<div [ngStyle]="{backgroundImage: 'url(\'assets/Livello 18.png\')', padding: '0 5%', height: '1277px'}"
-      class="container"
+<div id="App" [ngStyle]="{backgroundImage: 'url(\'assets/Livello 18.png\')', padding: '0 5%', height: '1277px'}"
+     class="container"
 >
   <div [ngStyle]="{gridColumn: 'col-start 2 / span 3', margin: 'auto'}">
-    <div [ngStyle]="{fontSize: '12px', textTransform: 'uppercase'}">
+    <div class="fs-12 uppercase">
       efficiente
     </div>
-    <div [ngStyle]="{fontSize: '56px', textTransform: 'uppercase'}">
+    <div class="fs-56 uppercase">
       A misura di ambiente
     </div>
-    <p [ngStyle]="{fontSize: '16' }">
-      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza all’interno del sistema.
+    <p class="fs-16">
+      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral
+      Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura
+      superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza
+      all’interno del sistema.
     </p>
   </div>
   <div [ngStyle]="{gridColumn: 'col-start 8 / span 5', margin: 'auto'}">
@@ -57,14 +78,17 @@
      class="container"
 >
   <div [ngStyle]="{gridColumn: 'col-start 9 / span 4', margin: 'auto'}">
-    <div [ngStyle]="{fontSize: '12px', textTransform: 'uppercase'}">
+    <div class="fs-12 uppercase">
       efficiente
     </div>
-    <div [ngStyle]="{fontSize: '56px', textTransform: 'uppercase'}">
+    <div class="fs-56 uppercase">
       A misura di ambiente
     </div>
-    <p [ngStyle]="{fontSize: '16' }">
-      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza all’interno del sistema.
+    <p class="fs-16">
+      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral
+      Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura
+      superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza
+      all’interno del sistema.
     </p>
   </div>
 </div>
@@ -72,14 +96,17 @@
      class="container"
 >
   <div [ngStyle]="{gridColumn: 'col-start 1 / span 4', margin: 'auto', color: 'white'}">
-    <div [ngStyle]="{fontSize: '12px', textTransform: 'uppercase'}">
+    <div class="fs-12 uppercase">
       efficiente
     </div>
-    <div [ngStyle]="{fontSize: '56px', textTransform: 'uppercase'}">
+    <div class="fs-56 uppercase">
       A misura di ambiente
     </div>
-    <p [ngStyle]="{fontSize: '16' }">
-      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza all’interno del sistema.
+    <p class="fs-16">
+      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral
+      Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura
+      superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza
+      all’interno del sistema.
     </p>
   </div>
 </div>
@@ -90,14 +117,17 @@
     <img src="assets/Product image lat2.png" [ngStyle]="{width: '95%'}">
   </div>
   <div [ngStyle]="{gridColumn: 'col-start 9 / span 4', margin: 'auto'}">
-    <div [ngStyle]="{fontSize: '12px', textTransform: 'uppercase'}">
+    <div class="fs-12 uppercase">
       efficiente
     </div>
-    <div [ngStyle]="{fontSize: '56px', textTransform: 'uppercase'}">
+    <div class="fs-56 uppercase">
       A misura di ambiente
     </div>
-    <p [ngStyle]="{fontSize: '16' }">
-      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza all’interno del sistema.
+    <p class="fs-16">
+      Il funzionamento del sistema di regolazione SmartOne 365 si avvale dell’algoritmo PID (Proportional Integral
+      Derivative Strategy) che permette al sistema di rimanere “bilanciato” e trasferire così la corretta temperatura
+      superficiale radiante risparmiando energia, accrescendo il comfort ambientale e apportando una maggiore efficienza
+      all’interno del sistema.
     </p>
   </div>
 </div>

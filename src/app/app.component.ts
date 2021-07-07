@@ -7,6 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'smartOne';
+  isSidebarOpen = false;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -16,5 +17,15 @@ export class AppComponent {
     } else {
       element.classList.remove('navbar-on-scroll');
     }
+  }
+
+  openSidebar(): void {
+    // document.getElementById("rightMenu").style.display = "block";
+    this.isSidebarOpen = true;
+  }
+
+  closeSidebar():void {
+    // document.getElementById("rightMenu").style.display = "none";
+    this.isSidebarOpen = false;
   }
 }
