@@ -4,4 +4,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng start` to run the application. Navigate to `http://localhost:8088/`. The app will automatically reload if you change any of the source files.
+Run `npm start` to run the application. Navigate to `http://localhost:8088/`. The app will automatically reload if you change any of the source files.
